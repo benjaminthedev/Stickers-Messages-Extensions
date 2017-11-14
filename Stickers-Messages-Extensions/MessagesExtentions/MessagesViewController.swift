@@ -11,6 +11,10 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    let compactID : String = "compact"
+    let expandedID : String = "expanded"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -61,6 +65,10 @@ class MessagesViewController: MSMessagesAppViewController {
         // Called before the extension transitions to a new presentation style.
     
         // Use this method to prepare for the change in presentation style.
+    }
+    
+    func presentVC(presentationStyle: MSMessagesAppPresentationStyle){
+        //let identifier
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
