@@ -13,6 +13,10 @@
 		43A199A51FBADACA00A9B28C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A199A41FBADACA00A9B28C /* MessagesViewController.swift */; };
 		43A199A81FBADACA00A9B28C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A199A61FBADACA00A9B28C /* MainInterface.storyboard */; };
 		43A199AA1FBADACA00A9B28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A199A91FBADACA00A9B28C /* Assets.xcassets */; };
+		43A199BA1FBADE7200A9B28C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A199A11FBADACA00A9B28C /* Messages.framework */; };
+		43A199BD1FBADE7200A9B28C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A199BC1FBADE7200A9B28C /* MessagesViewController.swift */; };
+		43A199C01FBADE7200A9B28C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A199BE1FBADE7200A9B28C /* MainInterface.storyboard */; };
+		43A199C21FBADE7200A9B28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A199C11FBADE7200A9B28C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		43A199A71FBADACA00A9B28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		43A199A91FBADACA00A9B28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A199AB1FBADACA00A9B28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A199B91FBADE7200A9B28C /* MessagesExtentions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtentions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A199BC1FBADE7200A9B28C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		43A199BF1FBADE7200A9B28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		43A199C11FBADE7200A9B28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43A199C31FBADE7200A9B28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43A199B61FBADE7200A9B28C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A199BA1FBADE7200A9B28C /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +85,7 @@
 			children = (
 				43A199941FBADACA00A9B28C /* Stickers-Messages-Extensions */,
 				43A199A31FBADACA00A9B28C /* Stickers-Messages-Extensions MessagesExtension */,
+				43A199BB1FBADE7200A9B28C /* MessagesExtentions */,
 				43A199A01FBADACA00A9B28C /* Frameworks */,
 				43A199931FBADACA00A9B28C /* Products */,
 			);
@@ -78,6 +96,7 @@
 			children = (
 				43A199921FBADACA00A9B28C /* Stickers-Messages-Extensions.app */,
 				43A1999C1FBADACA00A9B28C /* Stickers-Messages-Extensions MessagesExtension.appex */,
+				43A199B91FBADE7200A9B28C /* MessagesExtentions.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +127,17 @@
 				43A199AB1FBADACA00A9B28C /* Info.plist */,
 			);
 			path = "Stickers-Messages-Extensions MessagesExtension";
+			sourceTree = "<group>";
+		};
+		43A199BB1FBADE7200A9B28C /* MessagesExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				43A199BC1FBADE7200A9B28C /* MessagesViewController.swift */,
+				43A199BE1FBADE7200A9B28C /* MainInterface.storyboard */,
+				43A199C11FBADE7200A9B28C /* Assets.xcassets */,
+				43A199C31FBADE7200A9B28C /* Info.plist */,
+			);
+			path = MessagesExtentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +177,23 @@
 			productReference = 43A1999C1FBADACA00A9B28C /* Stickers-Messages-Extensions MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		43A199B81FBADE7200A9B28C /* MessagesExtentions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A199C41FBADE7200A9B28C /* Build configuration list for PBXNativeTarget "MessagesExtentions" */;
+			buildPhases = (
+				43A199B51FBADE7200A9B28C /* Sources */,
+				43A199B61FBADE7200A9B28C /* Frameworks */,
+				43A199B71FBADE7200A9B28C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtentions;
+			productName = MessagesExtentions;
+			productReference = 43A199B91FBADE7200A9B28C /* MessagesExtentions.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +209,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					43A1999B1FBADACA00A9B28C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					43A199B81FBADE7200A9B28C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -182,6 +233,7 @@
 			targets = (
 				43A199911FBADAC900A9B28C /* Stickers-Messages-Extensions */,
 				43A1999B1FBADACA00A9B28C /* Stickers-Messages-Extensions MessagesExtension */,
+				43A199B81FBADE7200A9B28C /* MessagesExtentions */,
 			);
 		};
 /* End PBXProject section */
@@ -204,6 +256,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43A199B71FBADE7200A9B28C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A199C21FBADE7200A9B28C /* Assets.xcassets in Resources */,
+				43A199C01FBADE7200A9B28C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,6 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A199A51FBADACA00A9B28C /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A199B51FBADE7200A9B28C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A199BD1FBADE7200A9B28C /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +299,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				43A199A71FBADACA00A9B28C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		43A199BE1FBADE7200A9B28C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A199BF1FBADE7200A9B28C /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -402,6 +479,36 @@
 			};
 			name = Release;
 		};
+		43A199C51FBADE7200A9B28C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessagesExtentions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nothing.MessagesExtentions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43A199C61FBADE7200A9B28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MessagesExtentions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nothing.MessagesExtentions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +535,15 @@
 			buildConfigurations = (
 				43A199B31FBADACA00A9B28C /* Debug */,
 				43A199B41FBADACA00A9B28C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A199C41FBADE7200A9B28C /* Build configuration list for PBXNativeTarget "MessagesExtentions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A199C51FBADE7200A9B28C /* Debug */,
+				43A199C61FBADE7200A9B28C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
